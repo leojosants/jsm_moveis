@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -19,48 +19,107 @@
 		/>
 
 		<!-- custom css file link  -->
-		<link rel="stylesheet" href="/assets/css/style.css" />
+		<link rel="stylesheet" href="./assets/css/style.css" />
 
 		<!-- custom js file link  -->
-		<script src="/assets/js/script.js" defer></script>
+		<script src="./assets/js/script.js" defer></script>
 	</head>
 
 	<body>
 		<!-- header section starts  -->
-		<header class="header">
-			<a class="logo" href="/index.html">
+		<header class="c-header">
+			<a class="c-logo" href="/index.html">
 				<i class="ri-store-2-line"> JSM_móveis</i>
 			</a>
 
-			<form class="search-form" action="#">
-				<input type="search" id="search-box" placeholder="Search here..." />
-				<label class="ri-search-line" for="search-box"></label>
+			<form class="c-search-form" action="#">
+				<input type="search" id="id-search-box" placeholder="Pesquisar..." />
+				<label class="ri-search-line" for="id-search-box"></label>
 			</form>
 
-			<div class="icons">
-				<div class="ri-menu-line" id="menu-btn"></div>
-				<div class="ri-search-line" id="search-btn"></div>
-				<div class="ri-shopping-cart-line" id="cart-btn"></div>
-				<div class="ri-user-line" id="login-btn"></div>
+			<div class="c-icons">
+				<div class="ri-menu-line" id="id-menu-btn"></div>
+				<div class="ri-search-line" id="id-search-btn"></div>
+				<div class="ri-shopping-cart-line" id="id-cart-btn"></div>
+				<div class="ri-user-line" id="id-login-btn"></div>
 			</div>
 		</header>
 		<!-- header section ends  -->
 
 		<!-- closer btn start  -->
-		<div class="ri-close-line" id="closer"></div>
+		<div class="ri-close-line" id="id-closer"></div>
 
 		<!-- navbar start  -->
-		<nav class="navbar">
-			<a href="/index.html">Home</a>
-			<a href="/assets/pages/shop.html">Shop</a>
-			<a href="/assets/pages/about.html">About</a>
-			<a href="/assets/pages/team.html">Team</a>
+		<nav class="c-navbar">
+			<a href="/index.html">Principal</a>
+			<a href="/assets/pages/shop.html">Comprar</a>
+			<a href="/assets/pages/about.html">Sobre</a>
+			<a href="/assets/pages/team.html">Equipe</a>
 			<a href="/assets/pages/blog.html">Blog</a>
-			<a href="/assets/pages/contact.html">Contact</a>
+			<a href="/assets/pages/contact.html">Contato</a>
 		</nav>
 		<!-- navbar end  -->
 
 		<!-- shopping cart start  -->
+		<div class="c-shopping-cart">
+			<div class="c-box">
+				<i class="ri-close-line c-close-icon"></i>
+
+				<img src="./assets/images/cart-img-1.jpg" alt="" />
+
+				<div class="c-content">
+					<h3>Móveis modernos</h3>
+					<span class="c-quantity">1</span>
+					<span class="c-multiply">X</span>
+					<span class="c-price">R$140.00</span>
+				</div>
+			</div>
+
+			<div class="c-box">
+				<i class="ri-close-line c-close-icon"></i>
+
+				<img src="./assets/images/cart-img-2.jpg" alt="" />
+
+				<div class="c-content">
+					<h3>Móveis modernos</h3>
+					<span class="c-quantity">1</span>
+					<span class="c-multiply">X</span>
+					<span class="c-price">R$140.00</span>
+				</div>
+			</div>
+
+            <div class="c-box">
+				<i class="ri-close-line c-close-icon"></i>
+				
+                <img src="./assets/images/cart-img-3.jpg" alt="" />
+
+                <div class="c-content">
+                    <h3>Móveis modernos</h3>
+                    <span class="c-quantity">1</span>
+                    <span class="c-multiply">X</span>
+                    <span class="c-price">R$140.00</span>
+                </div>
+			</div>
+
+            <div class="c-box">
+				<i class="ri-close-line c-close-icon"></i>
+				
+                <img src="./assets/images/cart-img-4.jpg" alt="" />
+
+                <div class="c-content">
+                    <h3>Móveis modernos</h3>
+                    <span class="c-quantity">1</span>
+                    <span class="c-multiply">X</span>
+                    <span class="c-price">R$140.00</span>
+                </div>
+			</div>
+
+            <h3 class="c-total">Total:
+                <span>R$560.00</span>
+            </h3>
+
+            <a class="c-btn" href="#">verificar carrinho</a>
+		</div>
 		<!-- shopping cart end  -->
 
 		<!-- login form start  -->
