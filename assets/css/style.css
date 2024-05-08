@@ -897,7 +897,98 @@ section {
 .c-products .c-box-container .c-box .c-content .c-stars i {
     color: var(--color-ffd700);
 }
+
 .c-products .c-box-container .c-box .c-content .c-stars span {
     color: var(--color-b58d7e);
-    /* border: 1px solid red; */
+}
+
+.c-about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 2%;
+    border-radius: 3rem;
+    background-color: var(--color-f0e8e4);
+}
+
+.c-about .c-image {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 40rem;
+    flex: 1 1 40rem;
+}
+
+.c-about .c-image img { 
+    border-radius: 2rem;
+    width: 100%;
+}
+
+.c-about .c-content {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 40rem;
+    flex: 1 1 40rem;
+}
+
+.c-about .c-content span {
+    font-size: 2rem;
+    color: var(--color-b58d7e);
+}
+
+.c-about .c-content h3 {
+    font-size: 2.5rem;
+    color: var(--color-5e473e);
+    padding-top: 1rem;
+}
+
+.c-about .c-content p {
+    font-size: 1.4rem;
+    color: var(--color-b58d7e);
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+.c-services .c-box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.c-services .c-box-container .c-box {
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--color-f0e8e4);
+    border-radius: 2rem;
+}
+
+.c-services .c-box-container .c-box:hover {
+    box-shadow: var(--color-0000001a) 0px 4px 12px;
+}
+
+.c-services .c-box-container .c-box:hover img {
+    transform: translateY(-3px);
+}
+
+.c-services .c-box-container .c-box img {
+    font-size: 8rem;
+    margin-bottom: 1rem;
+}
+
+.c-services .c-box-container .c-box h3 {
+    font-size: 2.2rem;
+    color: var(--color-5e473e);
+}
+
+.c-services .c-box-container .c-box p {
+    font-size: 1.4rem;
+    color: var(--color-b58d7e);
+    line-height: 2;
+    padding: 1rem 0;
+    border: 1px solid red;
 }
