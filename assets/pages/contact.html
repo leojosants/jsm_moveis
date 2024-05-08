@@ -1,69 +1,270 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>contact</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contact</title>
+		<!-- remix icon cdn link  -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"
+			rel="stylesheet"
+		/>
 
-    <!-- remix icon cdn link  -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+		<!-- font awesome cdn link  -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+		/>
 
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+		<!-- custom css file link  -->
+		<link rel="stylesheet" href="../css/style.css" />
 
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/style.css">
+		<!-- custom js file link  -->
+		<script src="../js/script.js" defer></script>
+	</head>
 
-</head>
+	<body>
+		<!-- header section starts  -->
+		<header class="c-header">
+			<a class="c-logo" href="../../index.html">
+				<i class="ri-store-2-line"> JSM_móveis</i>
+			</a>
 
-<body>
+			<form class="c-search-form" action="#">
+				<input
+					type="search"
+					id="id-search-box"
+					placeholder="Pesquisar..."
+				/>
+				<label class="ri-search-line" for="id-search-box"></label>
+			</form>
 
-    <!-- header section starts  -->
+			<div class="c-icons">
+				<div class="ri-menu-line" id="id-menu-btn"></div>
+				<div class="ri-search-line" id="id-search-btn"></div>
+				<div class="ri-shopping-cart-line" id="id-cart-btn"></div>
+				<div class="ri-user-line" id="id-login-btn"></div>
+			</div>
+		</header>
+		<!-- header section ends  -->
 
-    <!-- header section ends  -->
+		<!-- closer btn start  -->
+		<div class="ri-close-line" id="id-closer"></div>
 
+		<!-- navbar start  -->
+		<nav class="c-navbar">
+			<a href="../../index.html">Principal</a>
+			<a href="./shop.html">Comprar</a>
+			<a href="./about.html">Sobre</a>
+			<a href="./team.html">Equipe</a>
+			<a href="./blog.html">Blog</a>
+			<a href="./contact.html">Contato</a>
+		</nav>
+		<!-- navbar end  -->
 
-    <!-- closer btn  -->
+		<!-- shopping cart start  -->
+		<div class="c-shopping-cart">
+			<div class="c-box">
+				<i class="ri-close-line c-close-icon"></i>
 
+				<img src="../images/cart-img-1.jpg" alt="" />
 
-    <!-- navbar start  -->
+				<div class="c-content">
+					<h3>Móveis modernos</h3>
+					<span class="c-quantity">1</span>
+					<span class="c-multiply">X</span>
+					<span class="c-price">R$140.00</span>
+				</div>
+			</div>
 
-    <!-- navbar end  -->
+			<div class="c-box">
+				<i class="ri-close-line c-close-icon"></i>
 
+				<img src="../images/cart-img-2.jpg" alt="" />
 
-    <!-- shopping cart start  -->
+				<div class="c-content">
+					<h3>Móveis modernos</h3>
+					<span class="c-quantity">1</span>
+					<span class="c-multiply">X</span>
+					<span class="c-price">R$140.00</span>
+				</div>
+			</div>
 
-    <!-- shopping cart end  -->
+			<div class="c-box">
+				<i class="ri-close-line c-close-icon"></i>
 
+				<img src="../images/cart-img-3.jpg" alt="" />
 
-    <!-- login form start  -->
+				<div class="c-content">
+					<h3>Móveis modernos</h3>
+					<span class="c-quantity">1</span>
+					<span class="c-multiply">X</span>
+					<span class="c-price">R$140.00</span>
+				</div>
+			</div>
 
-    <!-- login form end  -->
+			<div class="c-box">
+				<i class="ri-close-line c-close-icon"></i>
 
+				<img src="../images/cart-img-4.jpg" alt="" />
 
-    <!-- heading section start -->
+				<div class="c-content">
+					<h3>Móveis modernos</h3>
+					<span class="c-quantity">1</span>
+					<span class="c-multiply">X</span>
+					<span class="c-price">R$140.00</span>
+				</div>
+			</div>
 
-    <!-- heading section end -->
+			<h3 class="c-total">
+				Total:
+				<span>R$560.00</span>
+			</h3>
 
+			<a class="c-btn" href="#">verificar carrinho</a>
+		</div>
+		<!-- shopping cart end  -->
 
-    <!-- contact section start -->
+		<!-- login form start  -->
+		<div class="c-login-form">
+			<form action="">
+				<h3>Cadastro</h3>
 
-    <!-- contact section end -->
+				<input
+					class="c-box"
+					type="email"
+					placeholder="Entre com o email..."
+				/>
 
+				<input
+					class="c-box"
+					type="password"
+					placeholder="Entre com a senha..."
+				/>
 
+				<div class="c-remember">
+					<input type="checkbox" id="id-remember-me" />
+					<label for="id-remember-me">Lembre-me</label>
+				</div>
 
+				<input class="c-btn" type="submit" value="Entrar" />
 
+				<p>Esqueceu a senha? <a href="#">Clique aqui</a></p>
 
+				<p>Não tem uma conta? <a href="#">Criar</a></p>
+			</form>
+		</div>
+		<!-- login form end  -->
 
-    <!-- footer section start  -->
+		<!-- heading section start -->
 
-    <!-- footer section end  -->
+		<!-- heading section end -->
 
-    <!-- custom js file link  -->
-    <script src="js/script.js"></script>
+		<!-- contact section start -->
 
-</body>
+		<!-- contact section end -->
 
+		<!-- footer section start  -->
+		<section class="c-footer">
+			<div class="c-box-container">
+				<div class="c-box">
+					<h3>Links Rápidos</h3>
+
+					<a href="../../index.html">
+						<i class="ri-arrow-right-line"></i> Principal
+					</a>
+
+					<a href="./shop.html">
+						<i class="ri-arrow-right-line"></i> Comprar
+					</a>
+
+					<a href="./about.html">
+						<i class="ri-arrow-right-line"></i> Sobre
+					</a>
+
+					<a href="./team.html">
+						<i class="ri-arrow-right-line"></i> Equipe
+					</a>
+
+					<a href="./blog.html">
+						<i class="ri-arrow-right-line"></i> Blog
+					</a>
+
+					<a href="./contact.html">
+						<i class="ri-arrow-right-line"></i> Contato
+					</a>
+				</div>
+
+				<div class="c-box">
+					<h3>Links Extras</h3>
+
+					<a href="#" target="_self" rel="internal">
+						<i class="ri-arrow-right-line"></i> Principal
+					</a>
+
+					<a href="#" target="_self" rel="internal">
+						<i class="ri-arrow-right-line"></i> Pedidos
+					</a>
+
+					<a href="#" target="_self" rel="internal">
+						<i class="ri-arrow-right-line"></i> Desejos
+					</a>
+
+					<a href="#" target="_self" rel="internal">
+						<i class="ri-arrow-right-line"></i> Conta
+					</a>
+
+					<a href="#" target="_self" rel="internal">
+						<i class="ri-arrow-right-line"></i> Favoritos
+					</a>
+
+					<a href="#" target="_self" rel="internal">
+						<i class="ri-arrow-right-line"></i> Termos
+					</a>
+				</div>
+
+				<div class="c-box">
+					<h3>Links Extras</h3>
+
+					<a href="#" target="_blank" rel="external">
+						<i class="ri-facebook-fill"></i> Facebook
+					</a>
+
+					<a href="#" target="_blank" rel="external">
+						<i class="ri-twitter-fill"></i> Twitter
+					</a>
+
+					<a href="#" target="_blank" rel="external">
+						<i class="ri-instagram-fill"></i> Instagram
+					</a>
+
+					<a href="#" target="_blank" rel="external">
+						<i class="ri-linkedin-fill"></i> Linkedin
+					</a>
+
+					<a href="#" target="_blank" rel="external">
+						<i class="ri-pinterest-fill"></i> Pinterest
+					</a>
+				</div>
+
+				<div class="c-box">
+					<h3>Boletim de Notícias</h3>
+
+					<p>Inscreva-se para receber as atualizações mais recentes</p>
+
+					<form action="#">
+						<input type="email" placeholder="Entre com o email" />
+						<input class="c-btn" type="submit" value="Inscrever" />
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<section class="c-credit">
+			Todos os direitos reservados JSM_móveis
+		</section>
+		<!-- footer section end  -->
+	</body>
 </html>
