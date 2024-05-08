@@ -6,7 +6,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>contact</title>
 
-		<link rel="shortcut icon" href="../images/favicon-contact.svg" type="image/x-icon">
+		<link
+			rel="shortcut icon"
+			href="../images/favicon-contact.svg"
+			type="image/x-icon"
+		/>
 
 		<!-- remix icon cdn link  -->
 		<link
@@ -175,7 +179,37 @@
 		<!-- heading section end -->
 
 		<!-- contact section start -->
+		<div class="c-contact">
+			<form action="#">
+				<h3>Entrar em contato</h3>
 
+				<span>Nome</span>
+				<input class="c-box" type="text" id="id-name" />
+
+				<span>Número</span>
+				<input class="c-box" type="number" id="id-number" />
+
+				<span>Email</span>
+				<input class="c-box" type="email" id="id-email" />
+
+				<span>Mensagem</span>
+				<textarea
+					class="c-box"
+					id="id-message"
+					cols="30"
+					rows="10"
+				></textarea>
+
+				<input class="c-btn" type="submit" value="Enviar" />
+			</form>
+
+			<iframe
+				class="c-map"
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29774.452488397037!2d-44.22465360000004!3d-21.120276849999986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa1c7bb6a04335b%3A0xbfb6db2c606cd8c3!2sSanta%20Cruz%20de%20Minas%2C%20MG%2C%2036328-000!5e0!3m2!1spt-BR!2sbr!4v1715199764017!5m2!1spt-BR!2sbr"
+				allowfullscreen=""
+				loading="lazy"
+			></iframe>
+		</div>
 		<!-- contact section end -->
 
 		<!-- footer section start  -->
@@ -211,10 +245,6 @@
 
 				<div class="c-box">
 					<h3>Links Extras</h3>
-
-					<a href="#" target="_self" rel="internal">
-						<i class="ri-arrow-right-line"></i> Principal
-					</a>
 
 					<a href="#" target="_self" rel="internal">
 						<i class="ri-arrow-right-line"></i> Pedidos

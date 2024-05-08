@@ -28,9 +28,7 @@ document.querySelector('#id-login-btn').onclick = () => {
     DOM_loginForm.classList.toggle('c-active');
 };
 
-// analisar
 document.querySelector('#id-search-btn').onclick = () => {
-    alert()
     DOM_searchForm.classList.toggle('c-active');
 };
 
