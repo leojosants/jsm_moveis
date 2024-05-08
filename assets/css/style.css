@@ -6,12 +6,17 @@
     --color-eae0dc: #eae0dc;
     --color-e1cec7: #e1cec7;
     --color-faf7f6: #faf7f6;
+    --color-ffd700: #ffd700;
     --color-f0e8e4: #f0e8e4;
+    --color-f5eeeb: #f5eeeb;
     --color-31231e: #31231e;
     --color-5e473e: #5e473e;
     --color-845f51: #845f51;
     --color-9e7464: #9e7464;
+    --color-f2f2f2b3: #f2f2f2b3;
+    --color-0000001a: #0000001a;
     --color-00000080: #00000080;
+    --z-index-10: 10;
     --z-index-100: 100;
     --z-index-1000: 1000;
     --z-index-10000: 10000;
@@ -754,5 +759,145 @@ section {
 
 .c-banner-container .c-banner .c-content .c-btn {
     padding: .7rem 2,5rem;
-    border: 1px solid red;
+}
+
+.c-category .c-box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(16rem, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 1.5rem;
+}
+
+.c-category .c-box-container .c-box {
+    padding: 2rem;
+    text-align: center;
+    border-radius: 2rem;
+    background: var(--color-f0e8e4);
+}
+
+.c-category .c-box-container .c-box:hover {
+    box-shadow: var(--color-0000001a) 0px 4px 12px;
+}
+
+.c-category .c-box-container .c-box:hover img {
+    transform: translateY(-3px);
+}
+
+.c-category .c-box-container .c-box img {
+    height: 6rem;
+    margin-bottom: 1rem;
+}
+
+.c-category .c-box-container .c-box h3 {
+    font-size: 1.7rem;
+    color: var(--color-5e473e);
+}
+
+.c-products .c-box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(26rem, 1f))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    gap: 1.5rem;
+    border-radius: 3rem;
+    background-color: var(--color-f0e8e4);
+}
+
+.c-products .c-box-container .c-box {
+    position: relative;
+    background: var(--color-f5eeeb);
+    overflow: hidden;
+    border-radius: 2rem;
+    border: 0.1rem solid var(--color-caab9f);
+}
+
+.c-products .c-box-container .c-box:hover .c-image img {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.c-products .c-box-container .c-box:hover .c-icons {
+    top: 0;
+}
+
+.c-products .c-box-container .c-box .c-icons {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    height: 30rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: .5rem;
+    background: var(--color-f2f2f2b3);
+    z-index: var(--z-index-10);
+}
+
+.c-products .c-box-container .c-box .c-icons a {
+    text-align: center;
+    height: 5rem;
+    line-height: 5rem;
+    width: 5rem;
+    background: var(--color-e1cec7);
+    color: var(--color-5e473e);
+    border-radius: 50%;
+    font-size: 2rem;
+    -webkit-box-shadow: 00.5rem 1rem var(--color-0000001a);
+    box-shadow: 00.5rem 1rem var(--color-0000001a);
+    transition: all 0.3s ease-in-out;
+}
+
+.c-products .c-box-container .c-box .c-icons a:hover {
+    background: var(--color-5e473e);
+    color: var(--color-e1cec7);
+}
+
+.c-products .c-box-container .c-box .c-image {
+    height: 30rem;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.c-products .c-box-container .c-box .c-image img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.c-products .c-box-container .c-box .c-content {
+    padding: 1.5rem 2rem;
+}
+
+.c-products .c-box-container .c-box .c-content .c-price {
+    font-size: 1.7rem;
+    color: var(--color-b58d7e);
+}
+
+.c-products .c-box-container .c-box .c-content h3 {
+    font-size: 2rem;
+    color: var(--color-5e473e);
+    padding: .5rem 0;
+}
+
+.c-products .c-box-container .c-box .c-content .c-stars {
+    font-size: 1.7rem;
+}
+
+.c-products .c-box-container .c-box .c-content .c-stars i {
+    color: var(--color-ffd700);
+}
+.c-products .c-box-container .c-box .c-content .c-stars span {
+    color: var(--color-b58d7e);
+    /* border: 1px solid red; */
 }
